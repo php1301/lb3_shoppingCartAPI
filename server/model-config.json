@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MongoDB"
+  },
+  "AccessToken": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "category": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "OrderItem": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}
