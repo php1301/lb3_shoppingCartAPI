@@ -29,7 +29,7 @@ module.exports = app => {
         .then(role => {
             RoleMapping.findOrCreate(
                 {   
-                    principalType: RoleMapping.USER,
+                    // principalType: RoleMapping.USER,
                     roleId: role.id,
                     principalId: account.id,
 
